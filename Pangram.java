@@ -10,11 +10,14 @@ public class Pangram {
 		String str=sc.nextLine().toLowerCase();
 		char[] str1=str.toCharArray();
 		boolean isPangram=true;
+		String alpha="abcdefghijklmnopqrstuvwxyz";
 		if(str.length()<26)
 		{
 			isPangram=false;
 		}
-		String alpha="abcdefghijklmnopqrstuvwxyz";
+		else
+		{
+		
 		for(int i=0;i<str.length();i++)
 		{
 			if(str1[i]>='a'||str1[i]<='z')
@@ -25,6 +28,7 @@ public class Pangram {
 			{
 				break;
 			}
+		}
 		}
 		if(isPangram)
 		{
